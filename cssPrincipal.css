@@ -2,6 +2,7 @@
 .Navbar {
     padding-top: 1%;
     height     : 20vh;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .Navbar .row1Nav {
@@ -65,7 +66,9 @@
     width          : 30%;
     text-align     : center;
     color          : cornflowerblue;
+    
 }
+
 
 .colum3Nav .ingreso {
 
@@ -85,6 +88,9 @@
     text-decoration: underline;
 
 }
+.misPedidos:hover,.ingreso:hover,.linkIngreso:hover,.shoppingCar:hover{
+    color: grey;
+}
 
 .Navbar .row2Nav {
     margin-top  : 1%;
@@ -102,18 +108,25 @@
     height      : 100%;
     padding-left: 4%;
 }
-
+.colum1Nav .select{
+    color:rgb(39, 103, 221);
+    text-decoration: underline;
+}
 .row2Nav .iconRow2 {
     color       : cornflowerblue;
     margin-right: 3%;
     font-size   : 1.8rem;
 }
-
+.iconRow2:hover{
+    color: grey;
+    font-size: 2rem;
+}
 .logoNav {
     height: 100%;
 }
 /* ---- ----- ----- imgprincipal ----- ----- ----- */
 .seccionProducts {
+    font-family: 'Josefin Sans', sans-serif;
     height: 60vh;
 }
 .seccionProducts .textImg{
@@ -123,16 +136,22 @@
     position: relative;
     bottom: 80%;
     left: 30px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .textImg .resaltado{
     color: rgb(219, 241, 13);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .textImg .btnTextImg{
     color: #fff;
     background-color: rgb(39, 103, 221);
+    font-family: 'Josefin Sans', sans-serif;
     width: 100%;
     height: 10%;
+}
+.btnTextImg:hover{
+    background-color:rgb(226 220 32);
 }
 /* ---- ----- ----- Seccion slider ----- ----- ----- */
 
@@ -163,8 +182,8 @@
     margin-right: 2px;
 }
 
-.contenedor-titulo-controles .indicadores button:hover,
-.contenedor-titulo-controles .indicadores button.activo {
+ .indicadores button:hover,
+ .indicadores button.activo {
     background: red;
 }
 
@@ -178,8 +197,8 @@
     position   : relative;
 }
 
-.productosSlider .contenedor-principal .flecha-izquierda,
-.productosSlider .contenedor-principal .flecha-derecha {
+.contenedor-principal .flecha-izquierda,
+.contenedor-principal .flecha-derecha {
     position   : absolute;
     border     : none;
     background : rgba(0, 0, 0, 0.3);
@@ -194,16 +213,16 @@
     transition : .2s ease all;
 }
 
-.productosSlider .contenedor-principal .flecha-izquierda:hover,
-.productosSlider .contenedor-principal .flecha-derecha:hover {
+ .contenedor-principal .flecha-izquierda:hover,
+ .contenedor-principal .flecha-derecha:hover {
     background: rgba(0, 0, 0, .9);
 }
 
-.productosSlider .contenedor-principal .flecha-izquierda {
+ .contenedor-principal .flecha-izquierda {
     left: 0;
 }
 
-.productosSlider .contenedor-principal .flecha-derecha {
+ .contenedor-principal .flecha-derecha {
     right: 0;
 }
 
@@ -215,34 +234,45 @@
     scroll-behavior: smooth;
 }
 
-.productosSlider .contenedor-carousel .carousel {
+ .contenedor-carousel .carousel {
     display  : flex;
     flex-wrap: nowrap;
 }
 
-.productosSlider .contenedor-carousel .carousel .pelicula {
+.carousel .product {
     text-align  : center;
     height      : 25vh;
     min-width   : 20%;
     transition  : .3s ease all;
     box-shadow  : 5px 5px 10px rgba(0, 0, 0, .3);
     margin-right: .5%;
+    margin-bottom: 4%;
 }
 
-.productosSlider .contenedor-carousel .carousel .pelicula .description {
-    font-size: 1.3rem;
+.product .description {
+    font-size: 1.5rem;
+    font-weight: 400;
     color    : rgb(39, 103, 221);
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.productosSlider .contenedor-carousel .carousel .pelicula.hover {
-    transform       : scale(1.2);
+.product:hover {
+    transform       : scale(0.9);
     transform-origin: center;
 }
-
-.productosSlider .contenedor-carousel .carousel .pelicula img {
+.product .selected{
+    width: 10%;
+    height: 40%;
+   
+}
+ .carousel .product {
     width         : 100%;
     vertical-align: top;
 
+}
+.carousel .select{
+    transform       : scale(0.9);
+    opacity: 0.9;
 }
 
 /* ---- ----- ----- Media Queries ----- ----- ----- */
@@ -257,11 +287,12 @@
         text-align    : center;
     }
 
-    .pelicula-principal {
+    .product-principal {
         font-size: 14px;
+        font-family: 'Josefin Sans', sans-serif;
     }
 
-    .pelicula-principal .descripcion {
+    .product-principal .descripcion {
         max-width: 100%;
     }
 
@@ -313,6 +344,7 @@
 
 .productsChoose .titleProduct {
     color      : cornflowerblue;
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     height     : 5%;
     width      : 100%;
@@ -345,7 +377,8 @@ footer {
     width     : 100%;
     background: #202020;
     color     : white;
-
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .container-footer-all {
@@ -451,18 +484,6 @@ footer {
 .copyright {
     color: #C7C7C7;
 }
-
-.copyright a {
-    text-decoration: none;
-    color          : white;
-    font-weight    : bold;
-}
-
-.information a {
-    text-decoration: none;
-    color          : #C7C7C7;
-}
-
 
 @media screen and (max-width: 1100px) {
 
